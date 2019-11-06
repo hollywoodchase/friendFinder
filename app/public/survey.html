@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danny's Group HW</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .question {
+            border: 2px solid black;
+        }
+        #submit {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="above-line">
+            <h4>Survey Questions</h4>
+        </div>
+        <hr>
+        <div class="form">
+            <h4>About You</h4>
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Name (required):</label>
+                    <input type="name" class="form-control" id="nameInput" aria-describedby="nameHelp"
+                        placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="photoLink">Link to Image URL (required):</label>
+                    <input type="link" class="form-control" id="photoLink" placeholder="Links">
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="container" id="questions">
+        <div class="question" id="q1">
+            <h4>Question 1</h4>
+            <h2>You enjoy long walks on the beach</h2>
+            <form action="/action_page.php">
+                <select name="ques1" id="ques1">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 2</h4>
+            <h2>Friends and family are more important than romantic partners</h2>
+            <form action="/action_page.php">
+                <select name="ques2" id="ques2">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 3</h4>
+            <h2>I'd rather go to a rock concert than a poetry reading</h2>
+            <form action="/action_page.php">
+                <select name="ques3" id="ques3">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 4</h4>
+            <h2>I'd prefer a beach vacation to an urban sprawl</h2>
+            <form action="/action_page.php">
+                <select name="ques4" id="ques4">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 5</h4>
+            <h2>My ideal date is relaxing</h2>
+            <form action="/action_page.php">
+                <select name="ques5" id="ques5">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 6</h4>
+            <h2>I go to the movies at least 10 times a year</h2>
+            <form action="/action_page.php">
+                <select name="ques6" id="ques6">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 7</h4>
+            <h2>Sports are a big part of my life</h2>
+            <form action="/action_page.php">
+                <select name="ques7" id="ques7">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 8</h4>
+            <h2>I prefer reading a book to social media</h2>
+            <form action="/action_page.php">
+                <select name="ques8" id="ques8">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 9</h4>
+            <h2>A relationship should be a 50/50 partnership</h2>
+            <form action="/action_page.php">
+                <select name="ques9" id="ques9">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div class="question" id="q1">
+            <h4>Question 10</h4>
+            <h2>I take all of my advice from my parents</h2>
+            <form action="/action_page.php" id="select-rating">
+                <select name="ques10" id="ques10">
+                    <option value="5">5 - Strongly Agree</option>
+                    <option value="4">4 - Agree</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Disagree</option>
+                    <option value="1">1 - Strongly Disagree</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <button class="btn btn-primary" id="submit">Submit</button>
+    </div>
+
+    <div class="container">
+        <p><a href="#">API Friends List</a> | <a href="#">GitHub Repo</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <script>
+        let info = [];
+        $('#submit').on('click', function() {
+            event.preventDefault();
+            let total = 0;
+            let name = $('#nameInput').val().trim();
+            let photoLink = $('#photoLink').val().trim();
+            let q1Val = $('#ques1').val();
+            let q2Val = $('#ques2').val();
+            let q3Val = $('#ques3').val();
+            let q4Val = $('#ques4').val();
+            let q5Val = $('#ques5').val();
+            let q6Val = $('#ques6').val();
+            let q7Val = $('#ques7').val();
+            let q8Val = $('#ques8').val();
+            let q9Val = $('#ques9').val();
+            let q10Val = $('#ques10').val();
+            info.push(name, photoLink, q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val);
+            for ()
+            console.log(info);
+        });
+    </script>
+</body>
+
+</html>
