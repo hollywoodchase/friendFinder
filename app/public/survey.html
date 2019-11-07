@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Danny's Group HW</title>
+    <title>Dating Survey</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,6 +13,7 @@
         .question {
             border: 2px solid black;
         }
+
         #submit {
             width: 100%;
         }
@@ -183,7 +184,7 @@
             </form>
             <br>
         </div>
-        <button class="btn btn-primary" id="submit">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
     </div>
 
     <div class="container">
@@ -191,11 +192,13 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/scripts/script.js"></script>
     <script>
-        let info = [];
-        $('#submit').on('click', function() {
+        console.log('hello');
+        $('#submit').on('click', function (event) {
             event.preventDefault();
+            console.log('hello');
+            let selectionInfo = [];
+            let idInfo = [];
             let total = 0;
             let name = $('#nameInput').val().trim();
             let photoLink = $('#photoLink').val().trim();
@@ -209,9 +212,46 @@
             let q8Val = $('#ques8').val();
             let q9Val = $('#ques9').val();
             let q10Val = $('#ques10').val();
-            info.push(name, photoLink, q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val);
-            for ()
-            console.log(info);
+
+            idInfo.push(name, photoLink);
+            selectionInfo.push(q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val);
+
+            console.log(idInfo);
+            console.log(selectionInfo);
+
+            let newFriend = {
+                friend: $('#nameInput').val().trim(),
+                q1 = $('#ques1').val(),
+                q2 = $('#ques2').val(),
+                q3 = $('#ques3').val(),
+                q4 = $('#ques4').val(),
+                q5 = $('#ques5').val(),
+                q6 = $('#ques6').val(),
+                q7 = $('#ques7').val(),
+                q8 = $('#ques8').val(),
+                q9 = $('#ques9').val(),
+                q10 = $('#ques10').val()
+            };
+
+            console.log('hello');
+
+            $.post('/api/friends', newFriend, function (data) {
+                if (data) {
+                    alert('Your data has been retrieved');
+                } else {
+                    alert("The shit didn't work");
+                }
+                $('#ques1').val(''),
+                    $('#ques2').val(''),
+                    $('#ques3').val(''),
+                    $('#ques4').val(''),
+                    $('#ques5').val(''),
+                    $('#ques6').val(''),
+                    $('#ques7').val(''),
+                    $('#ques8').val(''),
+                    $('#ques9').val(''),
+                    $('#ques10').val('')
+            });
         });
     </script>
 </body>
